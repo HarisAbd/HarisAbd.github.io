@@ -1,4 +1,106 @@
 
+html {
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+}
+@media (min-width: 58em) {
+  body {
+    font-size: 100%;
+  }
+}
+@media (min-width: 115em) {
+  body {
+    font-size: 110%;
+  }
+}
+@media (min-width: 125em) {
+  body {
+    font-size: 115%;
+  }
+}
+@media (min-width: 145em) {
+  body {
+    font-size: 120%;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    font-feature-settings: normal;
+    /* Internet Explorer fix */
+  }
+}	
+h1,h2,h3,h4,h5,h6,p {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Cambo", "Times New Roman", serif;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a, p a {
+  font-size: inherit;
+  font-family: "Cambo", "Times New Roman", serif;
+}
+h1{
+  font-size: 3em;
+  line-height: 1.213483146em;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 2.4em;
+  line-height: 1.25;
+  margin: 0.4em 0;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.61em;
+  line-height: 1.05em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h4{
+  font-size: 1.3em;
+  line-height: 1.714285714em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin: 0 0 .75em;
+}
+p,
+label,
+.btn,
+.form-control,
+.title h5,
+.navbar,
+.brand,
+.btn-simple,
+a,
+.td-name,
+td,
+small,
+.media h5,
+.subtitle {
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 #cover{
 	display: grid;
 }
@@ -9,6 +111,7 @@
 	max-height: 900px;
 }
 .overlay {
+	display: block;
 	color:black;
 	position:absolute;
 	z-index:12;
@@ -85,10 +188,22 @@
 .serareas{
 	background-color: #3E3E3D;
 	color: #C1C1C1;
-	display: flex;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: 10px;
+	/*
   	justify-content: space-around;
+  	align-items: center;*/
+  	padding: 20px;
 }
-
+.listofareas{
+	align-self: center;
+	border: 5px solid #444444;
+}
+.listofareas ul {
+  	list-style-type: circle;
+  	line-height: 3;
+}
 .parallax3 {
   background-image: url(..//img/yellowsky.png);
   min-height: 500px;
@@ -96,6 +211,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.carousel-caption{
+	bottom: 20%;
 }
 /*FOOTER************************************/
 .footerdark{
@@ -155,4 +273,44 @@
 	color: grey;
 	font-size: 0.8em;
 	padding: 20px;	
+}
+.d-none {
+    display: block!important;
+}
+@media (max-width: 600px){
+	.carousel-caption h1, p{
+		font-size: 0.8em;
+	}
+	.overlay-content h1{
+		font-size: 2em;
+	}
+	.overlay{
+		height:300px;
+	}
+}
+@media (max-width: 500px){
+	.overlay-content h1{
+		font-size: 1.5em;
+	}
+	.overlay{
+		height: 250px;
+	}
+	.btn{
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 400px){
+	.carousel-caption h1, p{
+		font-size: 0.6em;
+	}
+	.overlay-content h1{
+		font-size: 1em;
+	}
+	.overlay{
+		height: 200px;
+	}
+	.btn{
+		font-size: 0.6em;
+	}
 }
