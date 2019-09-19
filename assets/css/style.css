@@ -1,0 +1,26 @@
+.reviewclass a{
+	text-decoration:none!important;
+	color: grey;
+}
+.fa-facebook-square{
+    color: #3b5998!important;
+}
+.fa-twitter{
+    color: #00acee!important;
+}
+.fa-instagram{
+    color: #F56040!important;
+}
+.gg a:hover{
+    color: #F56040!important;
+}
+.tw a:hover{
+    color: #00acee!important;
+}
+.fb a:hover{
+    color: #3b5998!important;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
