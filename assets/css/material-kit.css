@@ -5088,7 +5088,7 @@ hr.on-light {
 }
 
 .info p {
-    color: #999999;
+    color: #eeeeee;
 }
 
 .info-horizontal .icon {
@@ -6558,17 +6558,17 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
     background-color: #343434;
     background-size: 200% 240%;
     background: #232323;
-    background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);
+    background: -moz-radial-gradient(center, ellipse cover, #2a0000  0%, #161616 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #585858), color-stop(100%, #232323));
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #2a0000 ), color-stop(100%, #161616));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #2a0000  0%, #161616 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);
+    background: -o-radial-gradient(center, ellipse cover, #2a0000  0%, #161616 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #2a0000  0%, #161616 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at center, #585858 0%, #232323 100%);
+    background: radial-gradient(ellipse at center, #2a0000  0%, #161616 100%);
     /* W3C */
     background-size: 550% 450%;
 }
@@ -7138,10 +7138,10 @@ footer ul {
     padding: 0;
     list-style: none;
 }
-
+/*
 footer ul li {
     display: inline-block;
-}
+}*/
 
 footer ul li a {
     color: inherit;
@@ -7199,10 +7199,10 @@ footer .footer-brand {
 footer .footer-brand:hover, footer .footer-brand:focus {
     color: #3C4858;
 }
-
+/*
 footer .copyright {
     padding: 15px 0;
-}
+}*/
 
 footer .copyright .material-icons {
     font-size: 18px;
@@ -9566,5 +9566,23 @@ select.selectpicker {
 @media all and (max-width: 1050px) and (min-width: 991px) {
     .main.main-raised .container {
         width: 920px;
+    }
+}
+.copyright{
+    color: #515151!important;
+}
+
+.test-logo{
+    padding: 0px!important;
+    }
+@media only screen and (max-width: 999px) {
+    .test-logo{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .test-logo{
+        width: 50px;
     }
 }

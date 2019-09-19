@@ -25,3 +25,33 @@
 	flex-wrap: wrap;
 	padding: 5px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+@media only screen and (max-width: 999px) {
+	.title-car{
+		font-size: 2em;
+	}
+	.hfour-car{
+		font-size: 1em;
+	}
+	.navbar-brand{
+		font-size: 0.8em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.title-car{
+		font-size: 1.8em;
+	}
+	.hfour-car{
+		font-size: 0.8em;
+	}
+	.navbar-brand{
+		font-size: 0.6em;
+	}
+	.btn{
+		padding: 5px!important;
+	}
+}
