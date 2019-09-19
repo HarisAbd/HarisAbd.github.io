@@ -20,7 +20,8 @@
 .fb a:hover{
     color: #3b5998!important;
 }
-.row{
+.footerrow{
 	display: flex;
 	flex-wrap: wrap;
+	padding: 5px;
 }
